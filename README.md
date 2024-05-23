@@ -34,7 +34,7 @@ Pour installer et utiliser ce script :
    ```bash
    git clone https://github.com/taloubsn/install-elk.git
    cd votre-depot
-   cp env.sample .env // modifier .env selon vos préférences n oublier pas mettre IP_ADDRESS à celle de votre machine
+   cp env.sample .env #modifier .env selon vos préférences n oublier pas de modifier la valeur IP_ADDRESS à celle de votre machine
    chmod +x main.sh
    sudo ./main.sh
 
