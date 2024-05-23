@@ -9,6 +9,11 @@ Ce script configure Elasticsearch, Kibana et Logstash sur une seule machine en f
 
 Nous allons installer et configurer une stack Elastic (Elasticsearch, Kibana et Logstash) avec des certificats auto-signés pour sécuriser les communications entre les différents composants.
 Ce script a été testé sur centos7 et Ubuntu
+
+## Pré-requis
+ . Système d'exploitation Centos 7 ou ubuntu
+ . Accès root ou sudo
+
 ## Exigences Matérielles
 Pour une installation optimale, la machine doit répondre aux exigences suivantes :
 - CPU: 8 cœurs ou plus

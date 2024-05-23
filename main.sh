@@ -10,13 +10,13 @@ veirifier_root
 detect_linux_distribution
 
 # Exemple d'appel de la fonction install_java
-#install_java
+install_java
 
 # Charger les variables d'environnement depuis le fichier .env
 load_environment_variables
 
 # Appel des autres scripts
-#source ./download.sh
+source ./download.sh
 source ./configuration.sh
 source ./start.sh
 
