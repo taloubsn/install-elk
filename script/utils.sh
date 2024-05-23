@@ -22,6 +22,7 @@ detect_linux_distribution() {
         VERSION=$(uname -r)
     fi
 
+
     # Vérification si la distribution Linux est détectée correctement
     if [ -z "$OS" ]; then
         echo "Erreur : Impossible de détecter la distribution Linux."

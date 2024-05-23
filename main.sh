@@ -1,8 +1,10 @@
 #!/bin/bash
 
+
 # Chemins vers les répertoires de configuration et de scripts
 CONFIGURATION_DIR="./configuration"
 SCRIPTS_DIR="./scripts"
+
 
 # Inclure le script utils.sh
 source "$SCRIPTS_DIR/utils.sh"

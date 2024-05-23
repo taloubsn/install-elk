@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#
 # Générer un certificat auto-signé pour Elasticsearch
 generate_certificate() {
     echo "Génération du certificat auto-signé pour l'adresse IP $IP_ADDRESS..."

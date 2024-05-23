@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Démarrage Elasticsearch
 start_elasticsearch() {
     echo "Démarrage d'Elasticsearch..."
