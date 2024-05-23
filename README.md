@@ -11,8 +11,8 @@ Nous allons installer et configurer une stack Elastic (Elasticsearch, Kibana et 
 Ce script a été testé sur centos7 et Ubuntu
 
 ## Pré-requis
- . Système d'exploitation Centos 7 ou ubuntu
- . Accès root ou sudo
+- Système d'exploitation Centos 7 ou ubuntu
+- Accès root ou sudo
 
 ## Exigences Matérielles
 Pour une installation optimale, la machine doit répondre aux exigences suivantes :
@@ -41,8 +41,10 @@ Pour installer et utiliser ce script :
 ## Réinitialisation du mot de passe Elasticsearch
 
 Si vous n'avez pas sauvegardé le mot de passe généré pour Elasticsearch lors de l'installation, vous pouvez le réinitialiser en exécutant la commande suivante :
-    ```bash    
-    /usr/share/elasticsearch/bin/elasticsearch-reset-password -i -u elastic --url https://IP_ADDRESS:HTTP_PORT
+1. Command:
+   ```bash
+   /usr/share/elasticsearch/bin/elasticsearch-reset-password -i -u elastic --url https://ip_address:http_port
+
 
 ## Kibana URL
 Après l'installation, vous pouvez accéder à Kibana via l'URL suivante : https://votre-adresse-ip:5601
