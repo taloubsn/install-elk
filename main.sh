@@ -1,9 +1,13 @@
 #!/bin/bash
 
-# Inclure le script utils.sh
-source ./utils.sh
+# Chemins vers les répertoires de configuration et de scripts
+CONFIGURATION_DIR="./configuration"
+SCRIPTS_DIR="./scripts"
 
-#Vérifier si l'utilisateur a les droits administratifs
+# Inclure le script utils.sh
+source "$SCRIPTS_DIR/utils.sh"
+
+# Vérifier si l'utilisateur a les droits administratifs
 veirifier_root
 
 # Détection de la distribution Linux
@@ -16,7 +20,6 @@ install_java
 load_environment_variables
 
 # Appel des autres scripts
-source ./download.sh
-source ./configuration.sh
-source ./start.sh
-
+source "$SCRIPTS_DIR/download.sh"
+source "$CONFIGURATION_DIR/configuration.sh"
+source "$SCRIPTS_DIR/start.sh"
