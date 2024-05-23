@@ -11,7 +11,7 @@ Nous allons installer et configurer une stack Elastic (Elasticsearch, Kibana et 
 Ce script a été testé sur centos7 et Ubuntu
 
 ## Pré-requis
-- Système d'exploitation Centos 7 ou ubuntu
+- Système d'exploitation Centos 7 ou ubuntu/20/22
 - Accès root ou sudo
 
 ## Exigences Matérielles
