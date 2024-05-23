@@ -5,9 +5,10 @@ Ce script a été créé par Abibou Diallo, Ingénieur Analyste SOC chez Senegal
 
 ## Description
 
-Ce script configure Elasticsearch, Kibana et Logstash sur une seule machine en fonction des paramètres spécifiés dans le fichier .env et effectue diverses tâches telles que lagénération de certificats, la configuration des fichiers de configuration et l'installation de plugins pour l'integration avec wazuh.
+Ce script configure Elasticsearch, Kibana et Logstash sur une seule machine en fonction des paramètres spécifiés dans le fichier .env et effectue diverses tâches telles que la génération de certificats, la configuration des fichiers de configuration et l'installation de plugins pour l'integration avec wazuh.
 
 Nous allons installer et configurer une stack Elastic (Elasticsearch, Kibana et Logstash) avec des certificats auto-signés pour sécuriser les communications entre les différents composants.
+Ce script a été testé sur centos7 et Ubuntu
 ## Exigences Matérielles
 Pour une installation optimale, la machine doit répondre aux exigences suivantes :
 - CPU: 8 cœurs ou plus
@@ -35,9 +36,8 @@ Pour installer et utiliser ce script :
 ## Réinitialisation du mot de passe Elasticsearch
 
 Si vous n'avez pas sauvegardé le mot de passe généré pour Elasticsearch lors de l'installation, vous pouvez le réinitialiser en exécutant la commande suivante :
-
-```bash
-/usr/share/elasticsearch/bin/elasticsearch-reset-password -i -u elastic --url https://IP_ADDRESS:HTTP_PORT
+    ```bash    
+    /usr/share/elasticsearch/bin/elasticsearch-reset-password -i -u elastic --url https://IP_ADDRESS:HTTP_PORT
 
 ## Kibana URL
 Après l'installation, vous pouvez accéder à Kibana via l'URL suivante : https://votre-adresse-ip:5601
@@ -46,3 +46,4 @@ N'oubliez pas de remplacer `votre-adresse-ip` par l'adresse IP de votre serveur 
 ## Contributions
 Les contributions sont les bienvenues ! Si vous avez des suggestions d'amélioration, veuillez ouvrir une 
 issue ou soumettre une pull request ou envoyer un mail à taloubsn@gmail.com
+
