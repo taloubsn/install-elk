@@ -36,8 +36,8 @@ Pour installer et utiliser ce script :
 
 Si vous n'avez pas sauvegardé le mot de passe généré pour Elasticsearch lors de l'installation, vous pouvez le réinitialiser en exécutant la commande suivante :
 
-
-/usr/share/elasticsearch/bin/elasticsearch-reset-password -i -u elastic --url https://ip:port
+```bash
+/usr/share/elasticsearch/bin/elasticsearch-reset-password -i -u elastic --url https://IP_ADDRESS:HTTP_PORT
 
 ## Kibana URL
 Après l'installation, vous pouvez accéder à Kibana via l'URL suivante : https://votre-adresse-ip:5601
