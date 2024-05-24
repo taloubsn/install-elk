@@ -114,15 +114,6 @@ configure_kibana() {
            -e "s~#*\(elasticsearch\.ssl\.verificationMode:\).*~\1 full~" \
            "$KIBANA_YML"
 
-    # Ajout de la ligne de configuration avec awk
-    awk '{
-    print
-    if ($0 == "server.ssl.certificate: /etc/kibana/certs/kibana/kibana.crt") {
-        print "server.ssl.certificateAuthorities: /etc/kibana/certs/ca/ca.crt"
-    }
-}' "$KIBANA_YML" 
-
-
     echo "Génération du token Elasticsearch..."
     token=$(/usr/share/elasticsearch/bin/elasticsearch-service-tokens create elastic/kibana kibana-token | awk -F' = ' '{print $2}')
 
