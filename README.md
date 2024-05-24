@@ -49,6 +49,12 @@ Si vous n'avez pas sauvegardé le mot de passe généré pour Elasticsearch lors
 ## Kibana URL
 Après l'installation, vous pouvez accéder à Kibana via l'URL suivante : https://votre-adresse-ip:5601
 N'oubliez pas de remplacer `votre-adresse-ip` par l'adresse IP de votre serveur où Kibana est installé. 'username' : elastic et 'password' : celui généré lors de l'installation ou ce que vous venez juste de réinitialiser
+N'oublier pas d'autoriser le port de kibana si le firewall est activer
+Exemple centos 7 
+1. Command:
+   ```bash
+   firewall-cmd --zone=public --add-port=5601/tcp --permanent
+   firewall-cmd --reload
 
 ## Contributions
 Les contributions sont les bienvenues ! Si vous avez des suggestions d'amélioration, veuillez ouvrir une 
