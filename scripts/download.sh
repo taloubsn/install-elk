@@ -91,6 +91,10 @@ install_logstash() {
     fi
 
     echo "Installation de Logstash réussie."
+    # Installation plugin wazuh
+    echo "Installation logstash input opensearch"
+    sudo /usr/share/logstash/bin/logstash-plugin install logstash-input-opensearch
+    echo "Installation du plugin wazuh réussie."
 }
 
 main() {
