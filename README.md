@@ -1,7 +1,7 @@
 # Configuration pour Elasticsearch, Kibana et Logstash
 
 ## Auteur
-Ce script a été créé par Abibou Diallo, Ingénieur Analyste SOC chez Senegal Numerique.
+Ce script a été créé par Abibou Diallo, Ingénieur Analyste SOC.
 
 ## Description
 
